@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Gabbu's Online Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="logn.css"/>
+  <link rel="preload" href="eye-svgrepo-com.svg" as="image">
+  <link rel="preload" href="eye-closed-svgrepo-com.svg" as="image">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="Gabbu Logo" />
+    </div>
+    <div class="login-box">
+      <input type="email" placeholder="Email Address" />
+      <div class="password-field">
+        <input type="password" placeholder="Password" />
+        <span class="toggle-password">
+          <img src="eye-closed-svgrepo-com.svg" alt="Show password" />
+        </span>
+      </div>
+      <a href="#" class="forgot">Forgot password?</a>
+      <button class="login-btn" onclick="window.location.href='index.html'">Login</button>
+      <p class="register-text">Don’t have an account? <a href="#">Register now</a></p>
+      <div class="alt-login">
+        <p>or</p>
+        <button class="google-btn">
+          <img src="google-icon-svgrepo-com.svg" alt="Google Icon" class="btn-icon">
+          Continue with Google
+        </button>
+        <button class="apple-btn">
+          <img src="apple-173-svgrepo-com.svg" alt="Apple Icon" class="btn-icon">
+          Continue with Apple
+        </button>
+        
+      </div>
+    </div>
+  </div>
+  <script src="log.js"></script>
+</body>
+</html>

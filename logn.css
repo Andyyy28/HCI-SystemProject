@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, white 0%, #ffd6d6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} 
+
+.container {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%; /* Ensure it takes full available width */
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ff523b;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem; /* Space for the icon */
+  font-size: 1rem;
+  border: 1px solid #ff523b;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 15px; /* Size of the icon */
+  height: 15px;
+}
+
+.toggle-password img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.eye-icon {
+  width: 15px;   /* or any size you prefer */
+  height: 15px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.eye-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff523b;
+  color: #fff;
+  font-weight: 600; 
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #00131c;
+  border: 1px solid #ff523b;
+}
+
+.register-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.register-text a {
+  color: #ff523b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.alt-login p {
+  margin: 1rem 0 0.5rem;
+  font-weight: 500;
+  color: #8a8a8a;
+}
+
+.google-btn,
+.apple-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ff523b;
+  border-radius: 8px;
+  background-color: #fff;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+.google-btn:hover,
+.apple-btn:hover {
+  background-color: #ffd6d6;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .password-field input {
+    padding: 0.75rem 2rem 0.75rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .google-btn,
+  .apple-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .login-btn {
+    padding: 0.6rem;
+  }
+
+  .register-text,
+  .forgot {
+    font-size: 0.8rem;
+  }
+}

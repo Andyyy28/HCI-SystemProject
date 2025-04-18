@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html" style="color:orange">Home</a></li>
+                    <li><a href="cart/index.html">Online Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a onclick="scrollToSpot()" class="">Contact</a></li>
+                    <li><a href="login.html" id="menu-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Welcome to Gabbu's <br> Pet Supply Shop</h1>
+                <p>Discover a world of tail-wagging delight at our one-stop destination for all your furry friend's needs.</p>
+                    <a onclick="scrollToHere()" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png" width="800px">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------ featured categories ------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/category-1.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/category-2.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/category-3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------ featured products ------>
+        <div class="small-container">
+            <div id="targetSpot"></div>
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.png">
+                    <h4>Wag & Wiggle Cuddler Pet Bed</h4>
+                    <p>₱500.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.png">
+                    <h4>Zee.Dog Pink Leash</h4>
+                    <p>₱250.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.png">
+                    <h4>NaturLife Adult Cat Food</h4>
+                    <p>₱300.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.png">
+                    <h4>Doggo Jasmine Pet Shampoo</h4>
+                    <p>₱200.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-5.png">
+                    <h4>IATA Pet Carrier</h4>
+                    <p>₱400.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-6.png">
+                    <h4>Pets World Pet Cage</h4>
+                    <p>₱1000.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-7.png">
+                    <h4>Kibbles n Bits Dog Food</h4>
+                    <p>₱2000.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-8.png">
+                    <h4>Leather Pet Collar</h4>
+                    <p>₱600.00</p>
+                </div>
+                <a href="cart/index.html" class="btn">Go to Online Store &#8594;</a>
+            </div>
+        </div>
+    <!------ offers ------>
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/exclusive.png" class="offer-img" width="550px">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusive Available on Gabbu's Supply Pet Shop</p>
+                        <h1 style="color:black">Gabbu's GPS Pet Tracker Collar</h1>
+                        <small>Embark on worry-free adventures with your furry friend, thanks to our cutting-edge Gabbu's GPS Pet Tracker Collar! Unleash the power of technology to keep your pet safe, secure, and always by your side. <br></small>
+                        <a href="product-details.html" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------ brands ------>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------ footer ------>
+        <div class="footer">
+            <div id="hereOh"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" width="200px">
+                        <p>Our purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many. </p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Gabbu69" id="myLink" class="link">Facebook</a></li>
+                            <li>Phone: 09319761558</li>
+                            <li>Email: gabrielusm6969@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright" color="white">Copyright 2023 - Edgardo Gabriel Paclibar</p>
+            </div>
+        </div>
+
+<!------ js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+<!------ js for view offers in header ------>
+    <script>
+        function scrollToHere() {
+        var targetSpot = document.getElementById('targetSpot');
+        targetSpot.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+<!------ js for facebook link ------>
+    <script>
+        document.getElementById('myLink').addEventListener('click', function(e) {e.preventDefault();
+        var url = 'https://www.facebook.com/Gabbu69';
+        window.open(url, '_blank');
+    }); 
+    </script>
+<!------ js for contact in header ------>
+    <script>
+        function scrollToSpot() {
+        var targetSpot = document.getElementById('hereOh');
+        targetSpot.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
