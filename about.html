@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart/index.html">Online Store</a></li>
+                    <li><a href="about.html" style="color:orange">About</a></li>
+                    <li><a onclick="scrollToSpot()" class="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>About Gabbu's Pet Supply Shop</h1>
+                <h3>Our Story</h3>
+                <p style="text-align: justify">At Gabbu's Pet Supply Shop, we believe that pets are not just animals; they are cherished members of our families. Our journey began with a passion for providing pet owners with a haven for all their pet needs - from nutrition to playtime, and everything in between.</p>
+                <br>
+                <h3>Mission</h3>
+                <h4>Passinate Pet Care:</h4>
+                <p style="text-align: justify">We are on a mission to enhance the lives of pets and their owners by offering a curated selection of high-quality products. Our shelves are stocked with a diverse range of premium pet foods, engaging toys, and stylish accessories to cater to the unique needs and personalities of your furry friends.</p>
+                <h4>Expert Guidance:</h4>
+                <p style="text-align: justify">Our team comprises dedicated pet enthusiasts who are not just here to sell products but to share their knowledge and expertise. Whether you're a seasoned pet owner or a first-time adopter, we're committed to providing personalized advice to ensure the well-being and happiness of your pets.</p>
+                <h4>Community Building:</h4>
+                <p style="text-align: justify">Beyond being a pet shop, Gabbu's Pet Supply Shop is a community of like-minded individuals who share a common love for animals. Join us in celebrating the joy, laughter, and companionship that our pets bring to our lives.</p>
+                <br>
+                <h3>What Sets Us Apart</h3>
+                <h4 style="font-weight: bold;">Premium Products: </h4><p style="text-align: justify">We source products from trusted brands known for their commitment to quality and pet well-being.</p>
+                <h4 style="font-weight: bold;">Diverse Selection: </h4><p style="text-align: justify">From nutritionally balanced foods to engaging toys and fashionable accessories, we offer a diverse range of products to cater to every pet's needs.</p>
+                <h4 style="font-weight: bold;">Customer-Centric Approach: </h4><p style="text-align: justify">Your satisfaction is our priority. We strive to make your shopping experience seamless, informative, and enjoyable.</p>
+                <br>
+                <h3>Connect With Us</h3>
+                <p>We invite you to explore our online store or visit our physical location to experience the Gabbu's Pet Supply Shop difference. Follow us on social media to stay updated on the latest pet trends, health tips, and adorable pet stories.
+                    <br><br>
+                    Thank you for choosing Gabbu's Pet Supply Shop as your trusted partner in providing the best for your beloved pets. Here's to a lifetime of wagging tails and purring hearts!
+                    <br><br>
+                    🐶🐱 Gabbu's Pet Supply Shop - Where Pets Come First! 🐾✨</p>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col-2">
+                <img src="images/image12.png" width="800px">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------ brands ------>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------ footer ------>
+        <div class="footer">
+            <div id="hereOh"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" width="200px">
+                        <p>Our purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many. </p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Gabbu69" id="myLink" class="link">Facebook</a></li>
+                            <li>Phone: 09319761558</li>
+                            <li>Email: gabrielusm6969@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright" color="white">Copyright 2023 - Edgardo Gabriel Paclibar</p>
+            </div>
+        </div>
+
+<!------ js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+<!------ js for view offers in header ------>
+    <script>
+        function scrollToHere() {
+        var targetSpot = document.getElementById('targetSpot');
+        targetSpot.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+<!------ js for facebook link ------>
+    <script>
+        document.getElementById('myLink').addEventListener('click', function(e) {e.preventDefault();
+        var url = 'https://www.facebook.com/Gabbu69';
+        window.open(url, '_blank');
+    }); 
+    </script>
+<!------ js for contact in header ------>
+    <script>
+        function scrollToSpot() {
+        var targetSpot = document.getElementById('hereOh');
+        targetSpot.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

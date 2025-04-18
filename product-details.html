@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart/index.html">Online Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a onclick="scrollToSpot()" class="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!------ single product details ------>
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.png" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.png" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.png" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.png" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.png" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Dog / Cat / Collar</p>
+                    <h1>Gabbu's GPS Pet Tracker Collar</h1>
+                    <h4>₱3000.00</h4>
+                    <select>
+                        <option>Select Color</option>
+                        <option>Orange</option>
+                        <option>Black</option>
+                    </select>
+                    <a href="" class="btn" onclick="buttonClicked()" style="cursor: pointer;">Buy Now</a>
+                    <h3>Product Details</h3>
+                    <p style="text-align: justify;">Pet collar with electronic tag: Compatible For Mitag and collar are integrated, and you can easily find your pet friends by opening your device. --Anti loss function: When playing outdoors, if you accidentally forget your pet, your Compatible For iPhone/watch/ipad will remind you when it is detected on my network. --Waterproof pet collar: is IP65 waterproof.</p>
+                </div>
+            </div>
+        </div>
+
+<br>
+<br>
+<br>
+
+    <!------ footer ------>
+    <div class="footer">
+        <div id="hereOh"></div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" width="200px">
+                    <p>Our purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many. </p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Gabbu69" id="myLink" class="link">Facebook</a></li>
+                        <li>Phone: 09319761558</li>
+                        <li>Email: gabrielusm6969@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright" color="white">Copyright 2023 - Edgardo Gabriel Paclibar</p>
+        </div>
+    </div>
+
+<!------ js for toggle menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px"
+        }
+        else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+<!------ js for view offers in header ------>
+<script>
+    function scrollToHere() {
+    var targetSpot = document.getElementById('targetSpot');
+    targetSpot.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<!------ js for facebook link ------>
+<script>
+    document.getElementById('myLink').addEventListener('click', function(e) {e.preventDefault();
+    var url = 'https://www.facebook.com/Gabbu69';
+    window.open(url, '_blank');
+}); 
+</script>
+<!------ js for contact in header ------>
+<script>
+    function scrollToSpot() {
+    var targetSpot = document.getElementById('hereOh');
+    targetSpot.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<!------ js for product gallery ------>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function(){
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function(){
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function(){
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function(){
+                ProductImg.src = SmallImg[3].src;
+            }
+    </script>
+<!------ js for Buy Now button ------>
+    <script>
+    function buttonClicked() {
+        alert("Your Order is Placed, Please wait for it to arrive");
+    }
+    </script>
+</body>
+</html>
